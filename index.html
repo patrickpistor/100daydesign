@@ -22,6 +22,9 @@
 		  background-color: #ecf0f1; /* Gecko Browsers */
 		  color: #e74c3c;
 		}
+		#sidenav-overlay {
+			z-index: 0;
+		}
 	</style> 
 </head>
 </head>
@@ -37,7 +40,7 @@
 					<li><a class="black-text waves-effect waves-light waves-teal" href="http://blog.patrickpistor.com/">Blog</a></li>
 					<li><a class="black-text waves-effect waves-light waves-teal" href="http://resume.patrickpistor.com/">Resume</a></li>
 				</ul>
-				<ul class="side-nav" id="mobile-demo">
+				<ul class="side-nav" id="mobile-demo" style="z-index: 1;">
 					<li><a class="black-text" href="http://patrickpistor.com/work.html">Work</a></li>
 					<li><a class="black-text" href="http://patrickpistor.com/about.html">About</a></li>
 					<li><a class="black-text" href="http://blog.patrickpistor.com/">Blog</a></li>
@@ -102,7 +105,9 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 	<script>
-		$( document ).ready(function(){$(".button-collapse").sideNav();});	
+		$( document ).ready( function() {
+			$(".button-collapse").sideNav();
+		});	
 	</script>
 	<script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiI1MEUzQzIiLCJpY29uIjoiYnViYmxlIiwicHJvbm91biI6Im1lIiwiaW50cm9UZXh0IjoiRmVlbCBmcmVlIHRvIGNvbnRhY3QgbWUgYmVsb3cgYW5kIGdldCBpbiB0b3VjaCB3aXRoIG1lIGFib3V0IGFueXRoaW5nISIsImNoYW5uZWxzIjpbWyJ0d2l0dGVyIiwieW9nZXJ0OTYiLCJzb2NpYWwiXSxbIm1lc3NlbmdlciIsInBhdHJpY2suai5waXN0b3IiLCJzb2NpYWwiXSxbImdpdGh1YiIsImh0dHBzOi8vZ2l0aHViLmNvbS95b2dlcnQ5NiIsInNvY2lhbCJdLFsibGlua2VkaW4iLCJodHRwczovL2xpbmtlZGluLmNvbS9pbi9wcGlzdG9yIiwic29jaWFsIl0sWyJzbmFwY2hhdCIsInlvZ2VydDk2Iiwic29jaWFsIl0sWyJwaG9uZSIsIjk3MDc2OTE2OTMiLCJjbGFzc2ljIl0sWyJlbWFpbCIsInlvZ2VydDk2QGdtYWlsLmNvbSIsImNsYXNzaWMiXV19'></script>
 </body>
